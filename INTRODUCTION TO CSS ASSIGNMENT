@@ -1,0 +1,135 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>Welcome to My Styled Page</h1>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>About Us</h2>
+            <p>This is a paragraph with some styled text. We're learning the basics of CSS styling.</p>
+            <img src="placeholder.jpg" alt="A placeholder image" class="styled-image">
+        </section>
+
+        <section class="content-section">
+            <h2>Our Services</h2>
+            <p>Here's a list of our services:</p>
+            <ul>
+                <li class="list-item">Service 1</li>
+                <li class="list-item">Service 2</li>
+                <li class="list-item">Service 3</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Styled Page</p>
+    </footer>
+
+</body>
+</html>
+```
+
+```css
+/* style.css */
+
+/* ID Selector */
+#main-header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Class Selector */
+.content-section {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Element and Class Selector */
+.styled-image {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #007bff;
+    border-radius: 10px;
+}
+
+/* Element and Class Selector */
+.list-item {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+}
+```
+
+**Key improvements and explanations:**
+
+1.  **Linking External CSS:**
+    * The `<link>` tag in the `<head>` section of the HTML file links the `style.css` file.
+2.  **ID Selector (`#main-header`)**:
+    * Styles the `header` element with the ID "main-header" using background color, padding, text alignment, and font family.
+3.  **Class Selector (`.content-section`)**:
+    * Styles the `section` elements with the class "content-section" by adding margins, padding, a border, border radius, and background color.
+4.  **Element and Class Selector (`.styled-image`)**:
+    * Styles the `img` element with the class "styled-image" by setting its width, display, margins, border, and border radius.
+5.  **Element and Class Selector (`.list-item`)**:
+    * Styles the `li` elements with the class "list-item" by setting the color, font size, margin bottom, and padding.
+6.  **Body and Typography Styles:**
+    * The `body` element is styled with a background color, font family, and text color.
+    * `h1`, `h2`, and `p` elements are styled with colors and line height.
+    * `ul` elements are styled with list style and padding.
+7.  **Footer Styling:**
+    * The `footer` element is styled with text alignment, padding, background color, and a top border.
+8.  **Image Placeholder:**
+    * A placeholder image is used. You should replace `"placeholder.jpg"` with the actual image path.
+9.  **Readability and Aesthetics:**
+    * Margins, padding, and borders are used to create spacing and visual separation.
+    * Colors and fonts are chosen to enhance readability and visual appeal.
+    * Consistent spacing and alignment are used for a clean layout.
+10. **Use of three selectors:**
+    * Id Selector (#main-header)
+    * Class Selector (.content-section)
+    * Element and Class Selector (.styled-image and .list-item)
